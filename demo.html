@@ -1,416 +1,603 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="no-js ie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
 
-	<head>
-		<meta charset="utf-8">
+   <!--- Basic Page Needs
+   ================================================== -->
+   <meta charset="utf-8">
+	<title>Woo - Free Responsive HTML5/CSS3 Template</title>
+	<meta name="description" content="">  
+	<meta name="author" content="">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+   <!-- Mobile Specific Metas
+   ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+	<!-- CSS
+    ================================================== -->
+   <link rel="stylesheet" href="css/default.css">
+	<link rel="stylesheet" href="css/layout.css">
+   <link rel="stylesheet" href="css/media-queries.css">
+   <link rel="stylesheet" href="css/animate.css">
+   <link rel="stylesheet" href="css/prettyPhoto.css">
 
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+   <!-- Script
+   ================================================== -->
+	<script src="js/modernizr.js"></script>
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" >
 
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+</head>
 
-		<!-- Theme used for syntax highlighting of code -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+<body>
 
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
+   <div id="preloader">      
+      <div id="status">
+         <img src="images/preloader.gif" height="64" width="64" alt="">
+      </div>
+   </div>
 
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+   <!-- Header
+   ================================================== -->
+   <header>
 
-	<body>
+      <div class="logo">
+         <a href="index.html"><img alt="" src="images/logo.png"></a>
+      </div>
 
-		<div class="reveal">
+      <nav id="nav-wrap">         
+         
+         <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show Menu</a>
+	      <a class="mobile-btn" href="#" title="Hide navigation">Hide Menu</a>         
 
-			<!-- Any section element inside of this container is displayed as a slide -->
-			<div class="slides">
-				<section>
-					<h1>Reveal.js</h1>
-					<h3>The HTML Presentation Framework</h3>
-					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
-					</p>
-				</section>
+         <ul id="nav" class="nav">
+            <li><a href="index.html#features">Features</a></li>
+	         <li><a href="index.html#pricing">Pricing</a></li>
+            <li><a href="index.html#screenshots">Screenshots</a></li>
+            <li><a href="index.html#testimonials">Testimonials</a></li>
+            <li><a href="index.html#subscribe">Subscribe</a></li>
+         </ul> <!-- end #nav -->
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
-				</section>
+      </nav> <!-- end #nav-wrap -->
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
-						</a>
-					</section>
-				</section>
+      <ul class="header-social">
+         <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+         <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+         <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+      </ul>
 
-				<section>
-					<h2>Slides</h2>
-					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="https://slides.com" target="_blank">https://slides.com</a>.
-					</p>
-				</section>
+   </header> <!-- Header End -->
+   
+   <!-- Homepage Hero
+   ================================================== -->
+   <section id="hero">
 
-				<section>
-					<h2>Point of View</h2>
-					<p>
-						Press <strong>ESC</strong> to enter the slide overview.
-					</p>
-					<p>
-						Hold down alt and click on any element to zoom in on it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Alt + click anywhere to zoom back out.
-					</p>
-				</section>
+	   <div class="row">
 
-				<section>
-					<h2>Touch Optimized</h2>
-					<p>
-						Presentations look great on touch devices, like mobile phones and tablets. Simply swipe through your slides.
-					</p>
-				</section>
+		   <div class="twelve columns">
 
-				<section data-markdown>
-					<script type="text/template">
-						## Markdown support
+			   <div class="hero-text">
+				   <h1 class="responsive-headline">The perfect template to showcase your awesome product and service.</h1>
 
-						Write content using inline or external Markdown.
-						Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
+				   <p>Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi
+               enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu.
+               Quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+			   </div>
 
-						```
-						<section data-markdown>
-						  ## Markdown support
+            <div class="buttons">
+               <a class="button trial" href="#">Free Trial</a>
+               <a class="button learn-more smoothscroll" href="#features">Learn More</a>
+            </div>
 
-						  Write content using inline or external Markdown.
-						  Instructions and more info available in the [readme](https://github.com/hakimel/reveal.js#markdown).
-						</section>
-						```
-					</script>
-				</section>
+            <div class="hero-image">
+               <img src="images/hero-image.png" alt="" />
+            </div>
 
-				<section>
-					<section id="fragments">
-						<h2>Fragments</h2>
-						<p>Hit the next arrow...</p>
-						<p class="fragment">... to step through ...</p>
-						<p><span class="fragment">... a</span> <span class="fragment">fragmented</span> <span class="fragment">slide.</span></p>
+		   </div>
 
-						<aside class="notes">
-							This slide has fragments which are also stepped through in the notes window.
-						</aside>
-					</section>
-					<section>
-						<h2>Fragment Styles</h2>
-						<p>There's different types of fragments, like:</p>
-						<p class="fragment grow">grow</p>
-						<p class="fragment shrink">shrink</p>
-						<p class="fragment fade-out">fade-out</p>
-						<p>
-							<span style="display: inline-block;" class="fragment fade-right">fade-right, </span>
-							<span style="display: inline-block;" class="fragment fade-up">up, </span>
-							<span style="display: inline-block;" class="fragment fade-down">down, </span>
-							<span style="display: inline-block;" class="fragment fade-left">left</span>
-						</p>
-						<p class="fragment fade-in-then-out">fade-in-then-out</p>
-						<p class="fragment fade-in-then-semi-out">fade-in-then-semi-out</p>
-						<p>Highlight <span class="fragment highlight-red">red</span> <span class="fragment highlight-blue">blue</span> <span class="fragment highlight-green">green</span></p>
-					</section>
-				</section>
+	   </div>
 
-				<section id="transitions">
-					<h2>Transition Styles</h2>
-					<p>
-						You can select from different transitions, like: <br>
-						<a href="?transition=none#/transitions">None</a> -
-						<a href="?transition=fade#/transitions">Fade</a> -
-						<a href="?transition=slide#/transitions">Slide</a> -
-						<a href="?transition=convex#/transitions">Convex</a> -
-						<a href="?transition=concave#/transitions">Concave</a> -
-						<a href="?transition=zoom#/transitions">Zoom</a>
-					</p>
-				</section>
+   </section> <!-- Homepage Hero end -->
 
-				<section id="themes">
-					<h2>Themes</h2>
-					<p>
-						reveal.js comes with a few themes built in: <br>
-						<!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/black.css'); return false;">Black (default)</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/white.css'); return false;">White</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/league.css'); return false;">League</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/sky.css'); return false;">Sky</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/beige.css'); return false;">Beige</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/simple.css'); return false;">Simple</a> <br>
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/serif.css'); return false;">Serif</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/blood.css'); return false;">Blood</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/night.css'); return false;">Night</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/moon.css'); return false;">Moon</a> -
-						<a href="#" onclick="document.getElementById('theme').setAttribute('href','css/theme/solarized.css'); return false;">Solarized</a>
-					</p>
-				</section>
+   <!-- Style Guide Section
+   ================================================== -->
+   <section id="styles" style="padding: 90px 0 72px; background: #fff;">
 
-				<section>
-					<section data-background="#dddddd">
-						<h2>Slide Backgrounds</h2>
-						<p>
-							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
-						</p>
-						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
-						<h2>Image Backgrounds</h2>
-						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
-					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
-						<h2>Tiled Backgrounds</h2>
-						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
-					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
-						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
-							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
-						</div>
-					</section>
-					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
-						<h2>... and GIFs!</h2>
-					</section>
-				</section>
+      <div class="row section-head">
 
-				<section data-transition="slide" data-background="#4d7e65" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						Different background transitions are available via the backgroundTransition option. This one's called "zoom".
-					</p>
-					<pre><code class="hljs">Reveal.configure({ backgroundTransition: 'zoom' })</code></pre>
-				</section>
+         <h1>Style Guide.</h1>
 
-				<section data-transition="slide" data-background="#b5533c" data-background-transition="zoom">
-					<h2>Background Transitions</h2>
-					<p>
-						You can override background transitions per-slide.
-					</p>
-					<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-transition="zoom"&gt;</code></pre>
-				</section>
+         <p class="lead add-bottom">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditipraesentium voluptatum
+         deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate.
+         At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
+         </p>                 
 
-				<section>
-					<h2>Pretty Code</h2>
-					<pre><code class="hljs" data-trim contenteditable>
-function linkify( selector ) {
-  if( supports3DTransforms ) {
+      </div> <!-- Row End-->
 
-    var nodes = document.querySelectorAll( selector );
+      <div class="row add-bottom">
 
-    for( var i = 0, len = nodes.length; i &lt; len; i++ ) {
-      var node = nodes[i];
+      	<hr> 
 
-      if( !node.className ) {
-        node.className += ' roll';
-      }
-    }
-  }
-}
-					</code></pre>
-					<p>Code syntax highlighting courtesy of <a href="http://softwaremaniacs.org/soft/highlight/en/description/">highlight.js</a>.</p>
-				</section>
+         <div class="six columns add-bottom">
 
-				<section>
-					<h2>Marvelous List</h2>
-					<ul>
-						<li>No order here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-						<li>Or here</li>
-					</ul>
-				</section>
+            <h3>Paragraph and Image</h3>
 
-				<section>
-					<h2>Fantastic Ordered List</h2>
-					<ol>
-						<li>One is smaller than...</li>
-						<li>Two is smaller than...</li>
-						<li>Three!</li>
-					</ol>
-				</section>
+            <p><a href="#"><img width="120" height="120" class="pull-left" alt="sample-image" src="images/sample-image.jpg"></a>
+  			   Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec libero. Suspendisse bibendum.
+  			   Cras id urna. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu
+  			   posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum
+  			   odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra
+  			   condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque.
+  			   posuere nunc justo tempus leo. </p>
 
-				<section>
-					<h2>Tabular Tables</h2>
-					<table>
-						<thead>
-							<tr>
-								<th>Item</th>
-								<th>Value</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Apples</td>
-								<td>$1</td>
-								<td>7</td>
-							</tr>
-							<tr>
-								<td>Lemonade</td>
-								<td>$2</td>
-								<td>18</td>
-							</tr>
-							<tr>
-								<td>Bread</td>
-								<td>$3</td>
-								<td>2</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
+            <p>A <a href="#">link</a>,
+  			   <abbr title="this really isn't a very good description">abbrebation</abbr>,
+  			   <strong>strong text</strong>,
+            <em>em text</em>,
+  			   <del>deleted text</del>, and
+            <mark>this is a mark text.</mark>
+          	</p>
 
-				<section>
-					<h2>Clever Quotes</h2>
-					<p>
-						These guys come in two forms, inline: <q cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The nice thing about standards is that there are so many to choose from</q> and block:
-					</p>
-					<blockquote cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-						&ldquo;For years there has been a theory that millions of monkeys typing at random on millions of typewriters would
-						reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-					</blockquote>
-				</section>
+         </div>
 
-				<section>
-					<h2>Intergalactic Interconnections</h2>
-					<p>
-						You can link between slides internally,
-						<a href="#/2/3">like this</a>.
-					</p>
-				</section>
+         <div class="six columns add-bottom">
 
-				<section>
-					<h2>Speaker View</h2>
-					<p>There's a <a href="https://github.com/hakimel/reveal.js#speaker-notes">speaker view</a>. It includes a timer, preview of the upcoming slide as well as your speaker notes.</p>
-					<p>Press the <em>S</em> key to try it out.</p>
+            <h3>Drop Caps</h3>
 
-					<aside class="notes">
-						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-					</aside>
-				</section>
+            <p class="drop-cap">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+            there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the
+            Semantics, a large language ocean. A small river named Duden flows by their place and supplies
+            it with the necessary regelialia. Morbi tincidunt, orci ac convallis aliquam, lectus turpis varius lorem, eu
+  			   posuere nunc justo tempus leo. Donec mattis, purus nec placerat bibendum, dui pede condimentum
+  			   odio, ac blandit ante orci ut diam. Cras fringilla magna. Phasellus suscipit, leo a pharetra
+  			   condimentum, lorem tellus eleifend magna, eget fringilla velit magna id neque.
+  			   </p>
 
-				<section>
-					<h2>Export to PDF</h2>
-					<p>Presentations can be <a href="https://github.com/hakimel/reveal.js#pdf-export">exported to PDF</a>, here's an example:</p>
-					<iframe data-src="https://www.slideshare.net/slideshow/embed_code/42840540" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
-				</section>
+            <h3>Small Print</h3>
 
-				<section>
-					<h2>Global State</h2>
-					<p>
-						Set <code>data-state="something"</code> on a slide and <code>"something"</code>
-						will be added as a class to the document element when the slide is open. This lets you
-						apply broader style changes, like switching the page background.
-					</p>
-				</section>
+            <p>Buy one widget, get one free!
+  				<small>(While supplies last. Offer expires on the vernal equinox. Not valid in Ohio.)</small>
+  			   </p>
 
-				<section data-state="customevent">
-					<h2>State Events</h2>
-					<p>
-						Additionally custom events can be triggered on a per slide basis by binding to the <code>data-state</code> name.
-					</p>
-					<pre><code class="javascript" data-trim contenteditable style="font-size: 18px;">
-Reveal.addEventListener( 'customevent', function() {
-	console.log( '"customevent" has fired' );
-} );
-					</code></pre>
-				</section>
+         </div>
 
-				<section>
-					<h2>Take a Moment</h2>
-					<p>
-						Press B or . on your keyboard to pause the presentation. This is helpful when you're on stage and want to take distracting slides off the screen.
-					</p>
-				</section>
+         <hr />
 
-				<section>
-					<h2>Much more</h2>
-					<ul>
-						<li>Right-to-left support</li>
-						<li><a href="https://github.com/hakimel/reveal.js#api">Extensive JavaScript API</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#auto-sliding">Auto-progression</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#parallax-background">Parallax backgrounds</a></li>
-						<li><a href="https://github.com/hakimel/reveal.js#keyboard-bindings">Custom keyboard bindings</a></li>
-					</ul>
-				</section>
+      </div> <!-- Row End-->
 
-				<section style="text-align: left;">
-					<h1>THE END</h1>
-					<p>
-						- <a href="https://slides.com">Try the online editor</a> <br>
-						- <a href="https://github.com/hakimel/reveal.js">Source code &amp; documentation</a>
-					</p>
-				</section>
+      <div class="row add-bottom">
 
-			</div>
+         <div class="six columns add-bottom">
 
-		</div>
+            <h3>Pull Quotes</h3>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.js"></script>
+            <aside class="pull-quote">
+    			   <blockquote>
+    				   <p>It is a paradisematic country, in which roasted parts of
+                  sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind
+                  texts it is an almost unorthographic life One day however a small line of blind text by the name
+                  of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+    				</blockquote>
+    			</aside>
 
-		<script>
+         </div>
 
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+         <div class="six columns add-bottom">
 
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
+            <h3>Block Quotes</h3>
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/search/search.js', async: true },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true }
-				]
-			});
+            <blockquote cite="http://where-i-got-my-info-from.com">
+   			   <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is
+               to do what you believe is great work. And the only way to do great work is to love what you do.
+               If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
+               </p>
+   				<cite>
+   				   <a href="#">Steve Jobs</a>
+   				</cite>
+			   </blockquote>
 
-		</script>
+            <blockquote>
+               <p>Good design is as little design as possible.</p>
+               <cite>Dieter Rams</cite>
+            </blockquote>
 
-	</body>
+         </div>
+
+         <hr />
+
+      </div> <!-- Row End-->
+
+      <div class="row add-bottom">
+
+         <div class="eight columns add-bottom">
+
+            <h3 class="add-bottom">Definition Lists</h3>
+
+            <h5>a) Multi-line Definitions (default)</h5>
+
+            <dl>
+			      <dt><b>This is a term</b></dt>
+				      <dd>this is the definition of that term, which both live in a <code>dl</code>.</dd>
+			      <dt><b>Another Term</b></dt>
+				      <dd>And it gets a definition too, which is this line</dd>
+				      <dd>This is a 2<sup>nd</sup> definition for a single term. A <code>dt</code> may be followed by multiple <code>dd</code>s.</dd>
+		      </dl>
+
+            <h5>b) Inline Definitions</h5>
+
+            <dl class="lining">
+			      <dt><b>This is a term</b></dt>
+				      <dd>this is the definition of that term, which both live in a <code>dl</code>.</dd>
+			      <dt><b>Another Term</b></dt>
+				      <dd class="micro">And it gets a definition too, which is this line</dd>
+				      <dd class="micro"> this is a 2<sup>nd</sup> definition for a single term.</dd>
+			      <dt><b>Term</b></dt>
+			      <dt><b>Other Defined Term</b></dt>
+				      <dd><code>dt</code> terms may stand on their own without an accompanying <code>dd</code>, but in that case they <em>share</em> descriptions with the next available <code>dt</code>. You may not have a <code>dd</code> without a parent <code>dt</code>.</dd>
+		      </dl>
+
+            <h5>c) Dictionary-style Definition</h5>
+
+            <dl class="dictionary-style">
+				   <dt><b>This is a term</b></dt>
+					   <dd>this is the definition of that term, which both live in a <code>dl</code>.</dd>
+					<dt><b>Another Term</b></dt>
+					   <dd>And it gets a definition too, which is this line</dd>
+					   <dd> this is a 2<sup>nd</sup> definition for a single term.</dd>
+					<dt><b>Term</b></dt>
+					<dt><b>Other Defined Term</b></dt>
+					   <dd><code>dt</code> terms may stand on their own without an accompanying <code>dd</code>, but in that case they <em>share</em> descriptions with the next available <code>dt</code>. You may not have a <code>dd</code> without a parent <code>dt</code>.</dd>
+				</dl>
+
+         </div>
+
+         <div class="four columns add-bottom">
+
+            <h3>Example Lists</h3>
+
+            <ol>
+				   <li>Here is an example</li>
+				   <li>of an ordered list</li>
+			   </ol>
+
+            <ul class="disc">
+				   <li>Here is an example</li>
+				   <li>of an unordered list</li>
+			   </ul>
+
+            <h3>Stats Tabs</h3>
+
+            <ul class="stats-tabs">
+			      <li><a href="#">1,234 <b>Sasuke</b></a></li>
+			      <li><a href="#">567 <b>Hinata</b></a></li>
+			      <li><a href="#">23,456 <b>Naruto</b></a></li>
+			      <li><a href="#">3,456 <b>Kiba</b></a></li>
+			      <li><a href="#">456 <b>Shikamaru</b></a></li>
+			      <li><a href="#">26 <b>Sakura</b></a></li>
+		      </ul>
+
+            <h3>Headers</h3>
+
+            <h1>H1 Heading</h1>
+            <h2>H2 Heading</h2>
+            <h3>H3 Heading</h3>
+            <h4>H4 Heading</h4>
+            <h5>H5 Heading</h5>
+            <h6>H6 Heading</h6>
+
+            <hr>
+
+            <h3>button</h3>
+
+            <a class="button" href="#">This is a button</a>
+
+         </div>
+
+         <hr />
+
+      </div> <!-- Row End-->
+
+      <div class="row add-bottom">
+
+         <div class="twelve columns add-bottom">
+
+            <h3 class="add-bottom">Pagination</h3>
+
+            <nav class="pagination add-bottom">
+
+               <span class="page-numbers prev inactive">Prev</span>
+   	         <span class="page-numbers current">1</span>
+   	         <a href="#" class="page-numbers">2</a>
+               <a href="#" class="page-numbers">3</a>
+               <a href="#" class="page-numbers">4</a>
+               <a href="#" class="page-numbers">5</a>
+               <a href="#" class="page-numbers">6</a>
+               <a href="#" class="page-numbers">7</a>
+               <a href="#" class="page-numbers">8</a>
+               <a href="#" class="page-numbers">9</a>
+   	         <a href="#" class="page-numbers next">Next</a>
+
+		      </nav>
+
+         </div>
+
+         <hr />
+
+      </div> <!-- Row End-->
+
+      <!-- <div class="row add-bottom">
+
+         <div class="twelve columns add-bottom">
+
+            <h3>Form Styles</h3>
+
+            <form>
+               <fieldset>
+
+					   <label for="regularInput">Regular Input</label>
+						<input type="text" id="regularInput">
+
+                  <label for="regularTextarea">Regular Textarea</label>
+						<textarea id="regularTextarea"></textarea>
+
+                  <label for="selectList">Select List</label>
+						<select id="selectList">
+						   <option value="Option 1">Option 1</option>
+							<option value="Option 2">Option 2</option>
+							<option value="Option 3">Option 3</option>
+							<option value="Option 4">Option 4</option>
+						</select>
+
+                  <fieldset>
+						   <legend>Checkboxes</legend>
+
+                     <label for="regularCheckbox">
+							   <input type="checkbox" value="checkbox 1" id="regularCheckbox">
+								<span>Regular Checkbox</span>
+							</label>
+
+                     <label for="secondRegularCheckbox">
+							   <input type="checkbox" value="checkbox 2" id="secondRegularCheckbox">
+								<span>Regular Checkbox</span>
+							</label>
+						</fieldset>
+
+						<fieldset>
+						   <legend>Radio Buttons</legend>
+
+                     <label for="regularRadio">
+							   <input type="radio" value="radio 1" id="regularRadio" name="radios">
+							   <span>Regular Radio</span>
+							</label>
+
+                     <label for="secondRegularRadio">
+							   <input type="radio" value="radio 2" id="secondRegularRadio" name="radios">
+								<span>Regular Radio</span>
+							</label>
+						</fieldset>
+
+						<button type="submit">Submit Form</button>
+
+               </fieldset>
+				</form>
+
+         </div>
+
+         <hr />
+
+      </div> -->    <!-- Row End-->
+
+      <div class="row">
+
+         <div class="twelve columns">
+            <h3 class="half-bottom">Columns</h3>
+         </div>
+
+      </div> <!-- Row End-->
+
+      <!--<h4>1/3 Columns</h4>  -->
+
+      <div class="row">
+
+         <div class="four columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. </p>
+	      </div>
+
+         <div class="four columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. </p>
+	      </div>
+
+         <div class="four columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. </p>
+	      </div>
+
+      </div>
+
+      <!--<h4>1/4 Columns</h4>  -->
+
+      <div class="row">
+
+         <div class="three columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. Ut dui lectus, ultrices ut, sodales tincidunt,
+            viverra sed, nisl. </p>
+	      </div>
+
+         <div class="three columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. Ut dui lectus, ultrices ut, sodales tincidunt,
+            viverra sed, nisl. </p>
+	      </div>
+
+         <div class="three columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. Ut dui lectus, ultrices ut, sodales tincidunt,
+            viverra sed, nisl. </p>
+	      </div>
+
+         <div class="three columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. Ut dui lectus, ultrices ut, sodales tincidunt,
+            viverra sed, nisl. </p>
+	      </div>
+
+      </div>
+
+      <!--<h4>1/2 Columns</h4>  -->
+
+      <div class="row">
+
+         <div class="six columns">
+            <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. </p>
+         </div>
+
+         <div class="six columns">
+            <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. </p>
+         </div>
+
+      </div>
+
+      <!--<h4>2/3 Columns</h4>  -->
+
+      <div class="row">
+
+         <div class="eight columns">
+            <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor.</p>
+         </div>
+
+         <div class="four columns">
+            <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. </p>
+         </div>
+
+      </div>
+
+      <!--<h4>3/4 Columns</h4>  -->
+
+      <div class="row">
+
+         <div class="three columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at. </p>
+	      </div>
+
+         <div class="nine columns">
+		      <p>Cras aliquet. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor.Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor. Integer faucibus, eros ac molestie placerat, enim tellus varius lacus,
+            nec dictum nunc tortor id urna. Suspendisse dapibus ullamcorper pede. Vivamus ligula ipsum,
+            faucibus at, tincidunt eget, porttitor non, dolor.</p>
+	      </div>
+
+      </div>
+
+   </section> <!-- Style Guide Section End-->
+
+
+   <!-- Footer
+   ================================================== -->
+   <footer>
+
+      <div class="row">         
+
+         <div class="six columns info">
+
+            <div class="footer-logo">
+               <a href="#">
+                  <img src="images/footer-logo.png" alt="" />
+               </a>
+            </div>
+
+            <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet.
+            Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
+            nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+            </p>
+
+         </div>
+
+         <div class="six columns right-cols">
+
+            <div class="row">
+
+               <div class="columns">
+                  <h3 class="address">Come Visit</h3>
+                  <p>
+                  1600 Amphitheatre Parkway<br>
+                  Mountain View, CA<br>
+                  94043 US
+                  </p>
+               </div>
+
+               <div class="columns">
+                  <h3 class="social">socialize</h3>
+                  <ul>
+                     <li><a href="#">Facebook</a></li>
+                     <li><a href="#">Twitter</a></li>
+                     <li><a href="#">GooglePlus</a></li>
+                  </ul>
+               </div>
+
+               <div class="columns last">
+                  <h3 class="contact">Contact Us</h3>
+                  <ul>
+                    <li><a href="tel:6473438234">647.343.8234</a></li>
+                    <li><a href="tel:1234567890">123.456.7890</a></li>
+                    <li><a href="mailto:someone@woo.com">someone@woosite.com</a></li>
+                  </ul>
+               </div>
+
+            </div> <!-- Nested Row End -->
+
+         </div>
+
+         <p class="copyright">&copy; 2014 Woo | Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a></p>
+
+         <div id="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#hero"><i class="icon-up-open"></i></a>
+         </div>
+
+      </div> <!-- Row End -->
+
+   </footer> <!-- Footer End-->
+
+
+   <!-- Java Script
+   ================================================== -->
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
+   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
+
+   <script src="js/waypoints.js"></script>
+   <script src="js/jquery.fittext.js"></script>    
+   <script src="js/main.js"></script>
+
+</body>
+
 </html>
